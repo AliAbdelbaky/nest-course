@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
+import { UserModule } from './user/user.module';
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  // eslint-disable-next-line prettier/prettier
+  imports: [UserModule],
 })
+// eslint-disable-next-line prettier/prettier
 export class AppModule {}
